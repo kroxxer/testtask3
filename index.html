@@ -1,0 +1,292 @@
+<html>
+    <head>
+        <script src="./main.js"></script>
+        <link href="./main.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="input container-item">
+                <ul class="container">
+                    <li>
+                        <label for="date">
+                            Дата : 
+                        </label>
+                    </li>
+                    <li>
+                        <input type="date" name="date" value="">
+                    </li>
+                    <li>
+                        <label for="income-switch">
+                            Приход/доход:
+                        </label>
+                    </li>
+                    <li>
+                        <select name="income-switch">
+                            <option value="income-on">Приход</option>
+                            <option value="income-off">Доход</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="category">
+                            Категория:
+                        </label>
+                    </li>
+                    <li>
+                        <select name="category">
+                        </select>
+                    </li>
+                    <li>
+                        <label for="total">
+                            Сумма:
+                        </label>
+                    </li>
+                    <li>
+                        <input type="text" name="total" value="0">
+                    </li>
+                    <li>
+                        <label for="comment">
+                            Комментарий:
+                        </label>
+                    </li>
+                    <li>
+                        <input type="text" name="comment" value="0">
+                    </li>
+                    <li>
+                        <button class="btn btn-primary button-large" id="csv">Export to CSV</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="container-item show">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Дата</th>
+                            <th>Приход/Доход</th>
+                            <th>Категория</th>
+                            <th>Комментарий</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Student Name">
+                                Prasad Bade
+                            </td>
+                            <td data-label="Roll Number">101</td>
+                            <td data-label="Class">10</td>
+                            <td data-label="Subject">Mathematics</td>
+                            <td data-label="Marks">85</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Student Name">
+                                Manohar Batra
+                            </td>
+                            <td data-label="Roll Number">102</td>
+                            <td data-label="Class">10</td>
+                            <td data-label="Subject">Science</td>
+                            <td data-label="Marks">88</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Student Name">
+                                Saurabh Puri
+                            </td>
+                            <td data-label="Roll Number">103</td>
+                            <td data-label="Class">10</td>
+                            <td data-label="Subject">History</td>
+                            <td data-label="Marks">92</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Student Name">
+                                Yuvraj Ghule
+                            </td>
+                            <td data-label="Roll Number">104</td>
+                            <td data-label="Class">10</td>
+                            <td data-label="Subject">Marathi</td>
+                            <td data-label="Marks">78</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Student Name">
+                                Prasad Bade
+                            </td>
+                            <td data-label="Roll Number">101</td>
+                            <td data-label="Class">10</td>
+                            <td data-label="Subject">Mathematics</td>
+                            <td data-label="Marks">85</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Student Name">
+                                Manohar Batra
+                            </td>
+                            <td data-label="Roll Number">102</td>
+                            <td data-label="Class">10</td>
+                            <td data-label="Subject">Science</td>
+                            <td data-label="Marks">88</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Student Name">
+                                Saurabh Puri
+                            </td>
+                            <td data-label="Roll Number">103</td>
+                            <td data-label="Class">10</td>
+                            <td data-label="Subject">History</td>
+                            <td data-label="Marks">92</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Student Name">
+                                Yuvraj Ghule
+                            </td>
+                            <td data-label="Roll Number">104</td>
+                            <td data-label="Class">10</td>
+                            <td data-label="Subject">Marathi</td>
+                            <td data-label="Marks">78</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Student Name">
+                                Prasad Bade
+                            </td>
+                            <td data-label="Roll Number">101</td>
+                            <td data-label="Class">10</td>
+                            <td data-label="Subject">Mathematics</td>
+                            <td data-label="Marks">85</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Student Name">
+                                Manohar Batra
+                            </td>
+                            <td data-label="Roll Number">102</td>
+                            <td data-label="Class">10</td>
+                            <td data-label="Subject">Science</td>
+                            <td data-label="Marks">88</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Student Name">
+                                Saurabh Puri
+                            </td>
+                            <td data-label="Roll Number">103</td>
+                            <td data-label="Class">10</td>
+                            <td data-label="Subject">History</td>
+                            <td data-label="Marks">92</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Student Name">
+                                Yuvraj Ghule
+                            </td>
+                            <td data-label="Roll Number">104</td>
+                            <td data-label="Class">10</td>
+                            <td data-label="Subject">Marathi</td>
+                            <td data-label="Marks">78</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Student Name">
+                                Prasad Bade
+                            </td>
+                            <td data-label="Roll Number">101</td>
+                            <td data-label="Class">10</td>
+                            <td data-label="Subject">Mathematics</td>
+                            <td data-label="Marks">85</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Student Name">
+                                Manohar Batra
+                            </td>
+                            <td data-label="Roll Number">102</td>
+                            <td data-label="Class">10</td>
+                            <td data-label="Subject">Science</td>
+                            <td data-label="Marks">88</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Student Name">
+                                Saurabh Puri
+                            </td>
+                            <td data-label="Roll Number">103</td>
+                            <td data-label="Class">10</td>
+                            <td data-label="Subject">History</td>
+                            <td data-label="Marks">92</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Student Name">
+                                Yuvraj Ghule
+                            </td>
+                            <td data-label="Roll Number">104</td>
+                            <td data-label="Class">10</td>
+                            <td data-label="Subject">Marathi</td>
+                            <td data-label="Marks">78</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Student Name">
+                                Prasad Bade
+                            </td>
+                            <td data-label="Roll Number">101</td>
+                            <td data-label="Class">10</td>
+                            <td data-label="Subject">Mathematics</td>
+                            <td data-label="Marks">85</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Student Name">
+                                Manohar Batra
+                            </td>
+                            <td data-label="Roll Number">102</td>
+                            <td data-label="Class">10</td>
+                            <td data-label="Subject">Science</td>
+                            <td data-label="Marks">88</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Student Name">
+                                Saurabh Puri
+                            </td>
+                            <td data-label="Roll Number">103</td>
+                            <td data-label="Class">10</td>
+                            <td data-label="Subject">History</td>
+                            <td data-label="Marks">92</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Student Name">
+                                Yuvraj Ghule
+                            </td>
+                            <td data-label="Roll Number">104</td>
+                            <td data-label="Class">10</td>
+                            <td data-label="Subject">Marathi</td>
+                            <td data-label="Marks">78</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Student Name">
+                                Prasad Bade
+                            </td>
+                            <td data-label="Roll Number">101</td>
+                            <td data-label="Class">10</td>
+                            <td data-label="Subject">Mathematics</td>
+                            <td data-label="Marks">85</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Student Name">
+                                Manohar Batra
+                            </td>
+                            <td data-label="Roll Number">102</td>
+                            <td data-label="Class">10</td>
+                            <td data-label="Subject">Science</td>
+                            <td data-label="Marks">88</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Student Name">
+                                Saurabh Puri
+                            </td>
+                            <td data-label="Roll Number">103</td>
+                            <td data-label="Class">10</td>
+                            <td data-label="Subject">History</td>
+                            <td data-label="Marks">92</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Student Name">
+                                Yuvraj Ghule
+                            </td>
+                            <td data-label="Roll Number">104</td>
+                            <td data-label="Class">10</td>
+                            <td data-label="Subject">Marathi</td>
+                            <td data-label="Marks">78</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

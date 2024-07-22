@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    font-size: 24px;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 10px;
+    background-color: grey;
+    border: 1px solid black;
+}
+
+.container-item{
+    background-color: wheat;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+.show {
+    overflow-y: auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr,th {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
