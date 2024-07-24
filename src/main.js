@@ -1,3 +1,3 @@
-window.addEventListener("load", (event) => {
-    document.getElementById('add').addEventListener('click' ());
+window.addEventListener("load", () => {
+    document.getElementById('add').addEventListener('click', ()=>{});
 });
