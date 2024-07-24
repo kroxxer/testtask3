@@ -18,7 +18,7 @@ RUN apk add --no-cache \
   php83-gd \
   php83-intl \
   php83-mbstring \
-  php83-mysqli \
+  php83-pgsql \
   php83-opcache \
   php83-openssl \
   php83-phar \
@@ -36,6 +36,7 @@ COPY config/conf.d /etc/nginx/conf.d/
 
 # Configure PHP-FPM
 ENV PHP_INI_DIR=/etc/php83
+ENV PGSSLCERT=/tmp/postgresql.crt
 COPY config/fpm-pool.conf ${PHP_INI_DIR}/php-fpm.d/www.conf
 COPY config/php.ini ${PHP_INI_DIR}/conf.d/custom.ini
 
